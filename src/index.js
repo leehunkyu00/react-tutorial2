@@ -137,12 +137,16 @@ class Game extends React.Component {
         }
 
         return (
-            <div style={{width:"50vw"}}>
-                <Steps current={stepIdx} style={{margin:"10px 25vw 20px"}}>
-                    <Step title="Ready" description="Ready!!." />
-                    <Step title="Playing games" description="Go!!" />
-                    <Step title="Finish" description="Done!!" />
-                </Steps>
+            // <div style={{width:"50vw"}}>
+            <div>
+                <div className="gameboard">
+                    <Steps current={stepIdx} style={{margin:"10px 25vw 20px"}}>
+                        <Step title="Ready" description="Ready!!." />
+                        <Step title="Playing games" description="Go!!" />
+                        <Step title="Finish" description="Done!!" />
+                    </Steps>
+
+                </div>
 
                 <div className="game">
                     <div className="game-board">
